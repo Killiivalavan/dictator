@@ -1,0 +1,14 @@
+[Unit]
+Description=Dictator voxtype idle auto-stop watcher
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/Code/dictator/bin/dictator-watcher.sh
+Restart=on-failure
+RestartSec=10
+Environment=XDG_RUNTIME_DIR=%t
+
+[Install]
+WantedBy=graphical-session.target

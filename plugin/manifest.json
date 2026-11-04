@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "killie.dictator",
+  "name": "Dictator",
+  "version": "0.1.0",
+  "author": "bashman",
+  "description": "Voxtype daemon control, power-aware, with idle auto-stop",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Dictator",
+    "description": "Voxtype daemon control and idle timeout",
+    "category": "System",
+    "allowMultiple": false
+  }
+}
